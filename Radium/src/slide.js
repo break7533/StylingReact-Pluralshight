@@ -1,15 +1,13 @@
 import React from 'react';
 
-import styles from './slide-styles';
-
 const { object, string } = React.PropTypes;
 
 function Slide(props) {
 	return (
-		<article style={{ ...styles.root, ...props.style }}>
+		<article style={props.style}>
 			<img src={props.image} alt={props.title} />
-			<footer style={styles.footer}>
-				<h2 style={styles.title}>{props.title}</h2>
+			<footer>
+				<h2>{props.title}</h2>
 				<div>{props.children}</div>
 			</footer>
 		</article>
