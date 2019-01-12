@@ -7,6 +7,7 @@ var webpack = require('webpack');
 const include = path.join(__dirname, 'src');
 
 module.exports = {
+	mode:'development',
 	devtool: 'source-map',
 	entry: [ './src/index' ],
 	output: {
