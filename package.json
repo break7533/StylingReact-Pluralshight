@@ -27,9 +27,10 @@
   },
   "homepage": "https://github.com/jaketrent/react-drift#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "autobind-decorator": "^1.2.0",
-    "babel-core": "^5.8.33",
-    "babel-loader": "^5.3.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "7.1.1",
     "babel-plugin-react-transform": "^1.1.1",
     "express": "^4.13.3",
     "file-loader": "^0.8.4",
@@ -42,5 +43,6 @@
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
-  }
+  },
+  "dependencies": {}
 }
