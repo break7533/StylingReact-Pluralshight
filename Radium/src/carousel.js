@@ -1,4 +1,6 @@
 import React from 'react';
+import Radium from 'Radium';
+import styles from './carousel-styles';
 
 const { node, number } = React.PropTypes;
 
@@ -16,7 +18,7 @@ function renderSlides(props) {
 
 function Carousel(props) {
 	return (
-		<div>
+		<div style={styles.root}>
 			{renderSlides(props)}
 			{props.nav}
 		</div>
@@ -29,4 +31,4 @@ Carousel.propTypes = {
 	width: number
 };
 
-export default Carousel;
+export default Radium(Carousel);
